@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  /*margin: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Julius Sans One", sans-serif; */
+  margin: 0;
+  width: 100%;
+}
+
+.home-page {
+  /* font-family: "Julius Sans One", sans-serif; */
+  background-color: #e3e7e95e;
+}
+
+/* NAV BAR STYLING */
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e3e7e95e;
+  border-bottom: 1px solid #e3e7e9b4;
+  padding: 15px;
+  /* height: 14vh; */
+}
+
+.navBar #log {
+  font-size: 2rem;
+  font-family: "Julius Sans One", sans-serif;
+
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+.navBar > ul,
+.nav-cart > ul {
+  display: flex;
+}
+
+.navBar > ul > li,
+.nav-cart > ul > li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+/* HERO SECTION */
+
+.new-collection-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 30vh; */
+  padding: 30px 0%;
+}
+
+.new-collection-header {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3.5rem;
+  /* text-align: center; */
+  /* margin-top: 30px; */
+}
+
+.new-collection-text p {
+  font-size: 0.8rem;
+  line-height: 20px;
+  width: 50%;
+}
+
+.new-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    /* width: 300px; */
+}
+
