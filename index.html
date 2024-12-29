@@ -24,6 +24,10 @@
       href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css" />
     <title>Savage</title>
   </head>
@@ -61,7 +65,7 @@
       <div class="home-page" id="HOME">
         <!-- HERO SECTION -->
 
-        <div class="new-collection-text">
+        <div class="new-collection-text" data-aos="zoom-in">
           <h1 class="new-collection-header pt-5 pb-3"><b>New Collection</b></h1>
           <p class="text-center text-bold">
             SAVAGE is all about redefining style. “The journey has begun, and
@@ -77,15 +81,15 @@
 
         <!-- NEW COLLECTION BOX -->
         <div class="new-collection container pt-4 pb-5">
-          <div class="new-collection-box-1">
+          <div class="new-collection-box-1" data-aos="zoom-in">
             <img src="styles/Assets/new-collection-1.jpg" alt="" />
           </div>
 
-          <div class="new-collection-box-2">
+          <div class="new-collection-box-2" data-aos="zoom-in">
             <img src="styles/Assets/new-collection-3.jpg" alt="" />
           </div>
 
-          <div class="new-collection-box-3">
+          <div class="new-collection-box-3" data-aos="zoom-in">
             <img src="styles/Assets/new-collection-2.jpg" alt="" />
           </div>
         </div>
@@ -93,34 +97,34 @@
 
       <!-- SHOP PAGE -->
       <div class="shop-page pt-5 container" id="SHOP">
-        <h1 class="display classic pt-5 pb-5">SAVAGE - SHOP</h1>
+        <h1 class="display classic pt-5 pb-5" data-aos="fade-up">SAVAGE - SHOP</h1>
 
         <div class="shop-categories">
-          <div class="shop-category-1">
+          <div class="shop-category-1" data-aos="zoom-in">
             <img src="styles/Assets/category-hoodie.jpg" alt="" />
             <a href="#" class="p-2 classic">SHOP FOR HOODIE</a>
           </div>
 
-          <div class="shop-category-2">
+          <div class="shop-category-2" data-aos="zoom-in">
             <img src="styles/Assets/category-top.jpg" alt="" />
             <a href="#" class="p-2 classic">SHOP FOR TOP</a>
           </div>
 
-          <div class="shop-category-3">
+          <div class="shop-category-3" data-aos="zoom-in">
             <img src="styles/Assets/category-trouser.jpg" alt="" />
             <a href="#" class="p-2 classic">SHOP FOR TROUSERS</a>
           </div>
 
           <!-- last three -->
-          <div class="shop-category-4">
+          <div class="shop-category-4" data-aos="zoom-in">
             <img src="styles/Assets/category-underwear.jpg" alt="" />
             <a href="#" class="p-2 classic">SHOP FOR UNDERWEAR</a>
           </div>
-          <div class="shop-category-4">
+          <div class="shop-category-4" data-aos="zoom-in">
             <img src="styles/Assets/category-socks.jpg" alt="" />
             <a href="#" class="p-2 classic">SHOP FOR SOCKS</a>
           </div>
-          <div class="shop-category-4">
+          <div class="shop-category-4" data-aos="zoom-in">
             <img src="styles/Assets/category-boxers.jpg" alt="" />
             <a href="#" class="p-2 classic">SHOP FOR BOXERS</a>
           </div>
@@ -128,11 +132,11 @@
 
         <div class="new-arrivals" id="newArrival">
           <div class="headings container-lg">
-            <div class="heading-1">OUR NEW ARRIVALS</div>
-            <a href="#ymal">VIEW OTHER PRODUCTS</a>
+            <div class="heading-1" data-aos="fade-up-right">OUR NEW ARRIVALS</div>
+            <a href="#ymal" data-aos="fade-up-left">VIEW OTHER PRODUCTS</a>
           </div>
 
-          <div class="new-arrival-div" id="newArrivalDiv"></div>
+          <div class="new-arrival-div" id="newArrivalDiv" data-aos="zoom-in-right"></div>
         </div>
       </div>
 
@@ -140,10 +144,10 @@
 
       <!-- BLOG PAGE -->
       <div class="pt-5" id="BLOG">
-        <h1 class="blog-header classic text-center">SAVAGE - BLOG</h1>
+        <h1 class="blog-header classic text-center" data-aos="fade-up">SAVAGE - BLOG</h1>
         <div class="blog-section pt-5">
           <!-- BLOG IMAGE -->
-          <div class="container-lg">
+          <div class="container-lg" data-aos="fade-right">
             <div class="row align-items-center justify-content-center">
               <!-- BLOG IMAGE -->
               <div class="col-4" id="blog-image">
@@ -193,30 +197,42 @@
       <!-- YOU MAY ALSO LIKE -->
       <div class="you-may-also-like" id="ymal">
         <div class="headings container-lg">
-          <div class="heading-1">OUR NEW ARRIVALS</div>
-          <a href="#newArrival">VIEW ALL PRODUCTS</a>
+          <div class="heading-1" data-aos="fade-right">OUR NEW ARRIVALS</div>
+          <a href="#newArrival" data-aos="fade-left">VIEW ALL PRODUCTS</a>
         </div>
 
-        <div class="ymal-box-div" id="ymalDiv"></div>
+        <div class="ymal-box-div" id="ymalDiv" data-aos="fade-in"></div>
       </div>
 
       <!-- CONTACT PAGE  -->
 
-      <div id="CONTACT" >
+      <div id="CONTACT">
         <div class="newsletter-div">
-          <span class="classic">SIGN UP TO OUR NEWSLETTER</span>
-          <input type="email" placeholder="Enter your email address" class="border"/>
-          <input type="button" value="SIGN UP TO OUR NEWSLETTER" />
+          <span class="classic" data-aos="fade-up">SIGN UP TO OUR NEWSLETTER</span>
+          <input
+          data-aos="zoom-in-right"
+            type="email"
+            placeholder="Enter your email address"
+            class="border"
+            id="emailInput"
+          />
+          <input
+            type="button"
+            value="SIGN UP TO OUR NEWSLETTER"
+            id="sign-up-button"
+            data-aos="zoom-in-left"
+          />
+          <p id="result" class="pt-2"></p>
         </div>
       </div>
 
-      <div id="FOOTER" class="border-bottom">
+      <div id="FOOTER">
         <div class="container">
           <div>
             <h3 class="classic">SAVAGE</h3>
             <span class="text-secondary"
               >Savage is not just a brand, it's a lifestyle, stay jiggy and stay
-              wierd,Stay tuned for our official launch this December 
+              wierd,Stay tuned for our official launch this December
             </span>
 
             <ul class="social-links-list">
@@ -241,8 +257,8 @@
             <ul>
               <li><a href="#">HOME</a></li>
               <li><a href="#SHOP">SHOP</a></li>
-              <li><a href="#BLOG" >BLOG</a></li>
-              <li><a href="#CONTACT" >CONTACT</a></li>
+              <li><a href="#BLOG">BLOG</a></li>
+              <li><a href="#CONTACT">CONTACT</a></li>
             </ul>
           </div>
 
@@ -261,7 +277,9 @@
           <!-- CONTACT US  -->
           <div>
             <h3 class="classic">Contact us</h3>
-            <span class="text-secondary">Do you have any question or suggestion></span>
+            <span class="text-secondary"
+              >Do you have any question or suggestion></span
+            >
             <p class="text-secondary">contact us @adepojujohn566@gmail.com</p>
             <span class="text-secondary"
               >Do you need support? give us a call
@@ -272,9 +290,9 @@
 
         <div id="copyright">
           <div class="container">
-            &copy; Copyright 2024 Johntizzy. Designed by Adepoju John Blessing
+            &copy; Copyright 2024 Johntizzy. Designed by Adepoju John Blessing,
+            credit NFT
           </div>
-  
         </div>
       </div>
     </div>
@@ -283,10 +301,22 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- AOS INITIALIZE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:200,
+        duration: 800, // Animation duration
+        easing: "ease-in-out", // Easing function
+      });
+    </script>
+
     <script src="main.js"></script>
   </body>
 </html>

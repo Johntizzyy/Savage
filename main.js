@@ -49,14 +49,18 @@ const productDiv = newArrival
   .map((product) => {
     return `
     <div class="new-arrival-box" >
-            <img src="${product.image}" alt="${product.image}">
+
+
+            <img src="${product.image}" alt="${product.image}" >
             <div>
              <span class="d-block text-secondary">${product.name}</span>
             <ion-icon size="large" name="heart-outline" onclick="handleHeartClick(this)"></ion-icon>
 
             </div>
             <span class="d-block text-secondary b">&#8358;${product.price}</span>
-    </div>
+      <div id="cartBtn" class="btn text-light">
+      Add to cart
+      </div>    </div>
     `;
   })
   .join("");
@@ -100,7 +104,7 @@ const ymal = [
     name: "SAVAGE HOODIE",
     price: 5000,
     image: "styles/Assets/savage-hoodie.jpg",
-  },
+  }
 ];
 
 const ymalDiv = document.getElementById("ymalDiv");
@@ -122,4 +126,36 @@ const ymalItems = ymal
   })
   .join("");
 
-ymalDiv.innerHTML = ymalItems
+ymalDiv.innerHTML = ymalItems;
+
+const emailInput = document.getElementById("emailInput");
+const signUp = document.getElementById("sign-up-button");
+const emailResult = document.getElementById("result");
+
+signUp.addEventListener("click", () => {
+  emailInput.value && emailInput.checkValidity()
+    ? emailResult.setAttribute("class", "text-success") ||
+      (emailResult.textContent = "Email address succesfully registered")
+    : emailResult.setAttribute("class", "text-warning") ||
+      (emailResult.textContent = "invalid email address");
+      emailInput.value = ""
+     
+});
+
+// setTimeout(function () {
+//   emailResult.textContent = "";
+// }, 3000);
+
+
+```
+npm install gh-pages --save-dev
+create your repo and do the normal stuff 
+init, add, check status,git commit msg, git branch, git rem add origin repolik,git push -u orin main
+add homepage:repolink,
+for script
+predeploy:npm run build,
+deplay;gh-pages -d build
+npm run deploy
+```
+
+
